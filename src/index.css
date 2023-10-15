@@ -1,0 +1,74 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.clr{
+    color: #00bfff;
+}
+
+div.my-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    list-style: none;
+    font-weight: 500;
+    font-family: poppins;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 13px;
+    border: 0.1px solid rgba(175, 240, 255, 0.815);
+    border-radius: 25px;
+    text-decoration: underline;
+    color: #00bfff;
+    font-size: 12px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 15px 15px 23px rgba(143, 191, 253, 0.2), -15px -15px 23px rgba(152, 228, 255, 0.2);
+}
+.key{
+    margin-right: 20px;
+}
+.poppins{
+    font-family: poppins;
+    border-radius: 25px;
+    border: 0.3px solid rgb(121, 215, 255);
+}
+button {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 140px 5px;
+    transition: background-position 0.5s ease, padding-left 0.5s ease;
+    width: 145px;
+    height: 40px;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    padding: 1px 7px 1px 7px;
+   
+  }
+  
+  button:hover {
+    transition: background-position 0.5s ease, padding-left 0.5s ease;
+    background-position: 113px 8px;
+    font-weight: 600;
+    padding-left: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 3px 20px rgba(180, 198, 251, 0.901);
+  }
+
+  .linker{
+    text-decoration: none;
+    color: black;
+  }
+
+  @keyframes fadeindown {
+    from {
+      transform: translateY(0%);
+    }
+  
+    to {
+      transform: translateY(100%);
+    }
+  }
