@@ -18,7 +18,7 @@ const NewsBox = (props) => {
 
   const updateNews = async () => {
     props.setProgress(10);
-    const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`;
+    const url = `https://news-api-harsha.onrender.com/${props.category}`;
     setLoading(true);
 
     try {
@@ -27,7 +27,7 @@ const NewsBox = (props) => {
       let parsedData = await data.json();
       props.setProgress(60);
 
-      const filteredArticles = parsedData.articles.filter(
+      const filteredArticles = parsedData[0].articles.filter(
         (article) => article.urlToImage
       );
 
